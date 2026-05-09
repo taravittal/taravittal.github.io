@@ -1,27 +1,222 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>Tara Vittal</title>
     <meta charset="UTF-8">
+    <title>Tara Vittal</title>
+
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+            color: #222;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 40px;
+            background-color: white;
+            border-radius: 20px;
+        }
+
+        h1 {
+            font-size: 64px;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 30px;
+            color: #555;
+            margin-bottom: 30px;
+        }
+
+        .links a {
+            margin-right: 25px;
+            text-decoration: none;
+            color: black;
+            font-size: 20px;
+        }
+
+        .main-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            margin-top: 50px;
+        }
+
+        h2 {
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            line-height: 1.7;
+            font-size: 22px;
+            color: #444;
+        }
+
+        .fact {
+            margin-bottom: 15px;
+            font-size: 22px;
+        }
+
+        .project-card {
+            margin-bottom: 50px;
+        }
+
+        .project-title {
+            font-size: 32px;
+            font-weight: bold;
+        }
+
+        .project-description {
+            margin-top: 10px;
+            margin-bottom: 15px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 18px;
+            background-color: black;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 18px;
+        }
+
+        img {
+            border-radius: 15px;
+            margin-top: 20px;
+        }
+
+    </style>
 </head>
 
-<body style="font-family: Arial, sans-serif; text-align: center; margin-top: 60px;">
+<body>
 
-    <h1>Tara Vittal</h1>
-    <h2>Student | Information Sciences</h2>
+    <div class="container">
 
-    <p style="max-width: 700px; margin: 20px auto;">
-        I am a sophomore majoring in Information Sciences at the University of Illinois at Urbana-Champaign.
-        I am interested in pursuing a career in data analytics or risk management.
-    </p>
+        <h1>Tara Vittal</h1>
 
-    <img src="images/profile.jpg" alt="My dog in the snow" width="300">
+        <div class="subtitle">
+            Information Sciences Student at UIUC
+        </div>
 
-    <p style="margin-top: 30px;">
-        <a href="https://github.com/taravittal" target="_blank">
-            My GitHub Profile
-        </a>
-    </p>
+        <div class="links">
+            <a href="https://github.com/taravittal" target="_blank">GitHub</a>
+
+            <a href="https://linkedin.com/tara-vittal" target="_blank">LinkedIn</a>
+
+            <a href="mailto:tarakiran06@gmail.com">Email</a>
+        </div>
+
+        <div class="main-grid">
+
+            <div>
+
+                <h2>About</h2>
+
+                <p>
+                    I am a sophomore majoring in Information Sciences at the
+                    University of Illinois at Urbana-Champaign. I am interested
+                    in data analytics, risk management, and using technology
+                    to solve real world problems.
+                </p>
+
+                <img src="images/profile.jpg" width="350">
+
+                <h2 style="margin-top: 50px;">Quick Facts</h2>
+
+                <div class="fact"> UIUC Information Sciences</div>
+
+                <div class="fact"> Interested in Data Analytics</div>
+
+                <div class="fact"> Python & Data Visualization</div>
+
+                <div class="fact"> Interested in Risk Management</div>
+
+                <div class="fact"> Experience with Jupyter & GitHub</div>
+
+            </div>
+
+            <div>
+
+                <h2>Projects</h2>
+
+                <div class="project-card">
+
+                    <div class="project-title">
+                        Video Game Sales by Console 
+                    </div>
+
+                    <p class="project-description">
+                        Data cleaning and exploratory analysis project
+                        completed using Python and Jupyter Notebook.
+                    </p>
+
+                    <a class="button"
+                       href="https://github.com/taravittal/data-cleaning-projects/project_01_template.ipynb"
+                       target="_blank">
+
+                        View Project
+
+                    </a>
+
+                </div>
+
+                <div class="project-card">
+
+                    <div class="project-title">
+                        Population Inferences
+                    </div>
+
+                    <p class="project-description">
+                        Statistical analysis and data preprocessing project
+                        involving filtering, visualization, and interpretation
+                        of data.
+                    </p>
+
+                    <a class="button"
+                       href="https://github.com/taravittal/data-cleaning-projects/project_02_template.ipynb"
+                       target="_blank">
+
+                        View Project
+
+                    </a>
+
+                </div>
+
+                <div class="project-card">
+
+                    <div class="project-title">
+                        Linear and Logistic Regression for Data Analysis
+                    </div>
+
+                    <p class="project-description">
+                        Python-based data analysis project using Jupyter,
+                        visualization tools, and exploratory analytics methods.
+                    </p>
+
+                    <a class="button"
+                       href="https://github.com/taravittal/data-cleaning-projects/project_03_template.ipynb"
+                       target="_blank">
+
+                        View Project
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
 
 </body>
+
 </html>
