@@ -1,14 +1,20 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tara Vittal</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
     <style>
 
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Nunito Sans', sans-serif;
             background-color: #f5f5f5;
             margin: 0;
             padding: 0;
@@ -26,6 +32,7 @@
         h1 {
             font-size: 64px;
             margin-bottom: 10px;
+            font-weight: 800;
         }
 
         .subtitle {
@@ -37,8 +44,14 @@
         .links a {
             margin-right: 25px;
             text-decoration: none;
-            color: black;
+            color: #13294B;
             font-size: 20px;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .links a:hover {
+            color: #FF5F05;
         }
 
         .main-grid {
@@ -51,10 +64,11 @@
         h2 {
             font-size: 40px;
             margin-bottom: 20px;
+            font-weight: 700;
         }
 
         p {
-            line-height: 1.7;
+            line-height: 1.8;
             font-size: 22px;
             color: #444;
         }
@@ -65,12 +79,16 @@
         }
 
         .project-card {
-            margin-bottom: 50px;
+            background: #fafafa;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            margin-bottom: 30px;
         }
 
         .project-title {
             font-size: 32px;
-            font-weight: bold;
+            font-weight: 700;
         }
 
         .project-description {
@@ -78,19 +96,43 @@
             margin-bottom: 15px;
         }
 
-        .button {
-            display: inline-block;
-            padding: 10px 18px;
-            background-color: black;
-            color: white;
-            text-decoration: none;
-            border-radius: 8px;
+        .project-link {
+            color: #13294B;
+            text-decoration: underline;
             font-size: 18px;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .project-link:hover {
+            color: #FF5F05;
         }
 
         img {
             border-radius: 15px;
             margin-top: 20px;
+        }
+
+        @media (max-width: 900px) {
+
+            .main-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            h1 {
+                font-size: 48px;
+            }
+
+            h2 {
+                font-size: 32px;
+            }
+
+            p,
+            .fact {
+                font-size: 18px;
+            }
+
         }
 
     </style>
@@ -109,7 +151,8 @@
         <div class="links">
             <a href="https://github.com/taravittal" target="_blank">GitHub</a>
 
-            <a href="https://linkedin.com/tara-vittal" target="_blank">LinkedIn</a>
+            <!-- Replace with your real LinkedIn URL -->
+            <a href="#" target="_blank">LinkedIn</a>
 
             <a href="mailto:tarakiran06@gmail.com">Email</a>
         </div>
@@ -124,22 +167,22 @@
                     I am a sophomore majoring in Information Sciences at the
                     University of Illinois at Urbana-Champaign. I am interested
                     in data analytics, risk management, and using technology
-                    to solve real world problems.
+                    to solve real-world problems.
                 </p>
 
-                <img src="images/profile.jpg" width="350">
+                <img src="images/profile.jpg" width="350" alt="Profile Photo">
 
                 <h2 style="margin-top: 50px;">Quick Facts</h2>
 
-                <div class="fact"> UIUC Information Sciences</div>
+                <div class="fact">UIUC Information Sciences</div>
 
-                <div class="fact"> Interested in Data Analytics</div>
+                <div class="fact">Interested in Data Analytics</div>
 
-                <div class="fact"> Python & Data Visualization</div>
+                <div class="fact">Python & Data Visualization</div>
 
-                <div class="fact"> Interested in Risk Management</div>
+                <div class="fact">Interested in Risk Management</div>
 
-                <div class="fact"> Experience with Jupyter & GitHub</div>
+                <div class="fact">Experience with Jupyter & GitHub</div>
 
             </div>
 
@@ -150,7 +193,7 @@
                 <div class="project-card">
 
                     <div class="project-title">
-                        Video Game Sales by Console 
+                        Video Game Sales by Console
                     </div>
 
                     <p class="project-description">
@@ -158,12 +201,10 @@
                         completed using Python and Jupyter Notebook.
                     </p>
 
-                    <a class="button"
+                    <a class="project-link"
                        href="https://github.com/taravittal/data-cleaning-projects/blob/main/project_01_template.ipynb"
                        target="_blank">
-
-                        View Project
-
+                        View Project →
                     </a>
 
                 </div>
@@ -180,12 +221,10 @@
                         of data.
                     </p>
 
-                    <a class="button"
-                       href="https://github.com/taravittal/data-cleaning-projects/project_02_template.ipynb"
+                    <a class="project-link"
+                       href="https://github.com/taravittal/data-cleaning-projects/blob/main/project_02_template.ipynb"
                        target="_blank">
-
-                        View Project
-
+                        View Project →
                     </a>
 
                 </div>
@@ -201,12 +240,10 @@
                         visualization tools, and exploratory analytics methods.
                     </p>
 
-                    <a class="button"
-                       href="https://github.com/taravittal/data-cleaning-projects/project_03_template.ipynb"
+                    <a class="project-link"
+                       href="https://github.com/taravittal/data-cleaning-projects/blob/main/project_03_template.ipynb"
                        target="_blank">
-
-                        View Project
-
+                        View Project →
                     </a>
 
                 </div>
@@ -220,3 +257,4 @@
 </body>
 
 </html>
+```
